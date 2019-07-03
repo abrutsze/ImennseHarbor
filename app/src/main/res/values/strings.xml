@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ImmenseHarbor</string>
+    <string name="detail">Detail</string>
+    <string name="login">Login</string>
+</resources>

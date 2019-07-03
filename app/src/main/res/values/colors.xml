@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="light_gray">#dbdbdb</color>
+    <color name="gray">#7e7e7e</color>
+    <color name="semi_gray">#979797</color>
+    <color name="dark_gray">#696969</color>
+    <color name="bg_color">#f7f7f7</color>
+    <color name="black">#000000</color>
+    <color name="black_trance">#12000000</color>
+    <color name="white">#ffffff</color>
+    <color name="blueWorker">#0008ff</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="shadow">#d0d8dc</color>
+    <color name="shadowx">#fafafa</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent_white">#88ffffff</color>
+    <color name="fb">#3b5998</color>
+    <color name="google">#d34836</color>
+    <color name="blueblue">#0098da</color>
+    <color name="redwhite">#fcd3c2</color>
+    <color name="redred">#ad3335</color>
+    <color name="blueWhite">#c9ebfb</color>
+    <color name="red_dark">#c9135c</color>
+    <color name="red_dark2">#271ffc</color>
+    <color name="cyan_light">#e49c00</color>
+    <color name="cyan">#00b448</color>
+    <color name="cyan_dark">#9e00a9</color>
+    <color name="navy_blue">#214258</color>
+    <color name="navy_blue_dark">#000000</color>
+    <color name="light_green">#78DC96</color>
+    <color name="light_blue">#55C8F0</color>
+    <color name="blue_black_dark">#13171d</color>
+    <color name="blue_black_light">#516179</color>
+    <color name="blue_grey_light">#A5B4C8</color>
+    <color name="orange">#FFA500</color>
+    <color name="yellow">#fff44f</color>
+    <color name="sorb">#2a5584</color>
+
+</resources>

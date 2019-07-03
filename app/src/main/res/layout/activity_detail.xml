@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".view.activities.DetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:id="@+id/abbLayout"
+            android:theme="@style/AppTheme.AppBarOverlay" tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_main"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:title="@string/detail"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+
+        >
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideLine_start"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp"
+    />
+
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideLine_end"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp"
+    />
+
+    <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/addressIcon"
+            android:src="@drawable/ic_my_location"
+            app:layout_constraintTop_toBottomOf="@id/abbLayout"
+            app:layout_constraintStart_toStartOf="@id/guideLine_start"
+            android:layout_marginTop="20dp"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:id="@+id/addressTxt"
+        app:layout_constraintTop_toBottomOf="@id/abbLayout"
+        app:layout_constraintStart_toEndOf="@id/addressIcon"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+    />
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:id="@+id/address"
+            app:layout_constraintTop_toBottomOf="@id/addressTxt"
+            app:layout_constraintStart_toEndOf="@id/addressIcon"
+            app:layout_constraintEnd_toEndOf="@id/guideLine_end"
+            android:layout_marginStart="20dp"
+            android:textSize="18sp"
+    />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/address"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@id/guideLine_start"
+            app:layout_constraintEnd_toEndOf="@id/guideLine_end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/recyclerView"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

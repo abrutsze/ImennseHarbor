@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="220dp"
+                                                   android:layout_marginTop="8dp"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+    >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/guideLine_start"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="16dp"
+            />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/guideLine_end"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="16dp"
+            />
+
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/personIcon"
+                    app:layout_constraintStart_toStartOf="@id/guideLine_start"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_person"
+            />
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    app:layout_constraintStart_toEndOf="@id/personIcon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Artur"
+                    android:textSize="18dp"
+            />
+
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/emailIcon"
+                    app:layout_constraintStart_toStartOf="@id/guideLine_start"
+                    app:layout_constraintTop_toBottomOf="@id/personIcon"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_email"
+            />
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    app:layout_constraintStart_toEndOf="@id/personIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/personIcon"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Artur@gmail.com"
+                    android:textSize="18dp"
+            />
+
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/phoneIcon"
+                    app:layout_constraintStart_toStartOf="@id/guideLine_start"
+                    app:layout_constraintTop_toBottomOf="@id/emailIcon"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_local_phone"
+            />
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phone"
+                    app:layout_constraintStart_toEndOf="@id/personIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/emailIcon"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="10dp"
+                    android:text="+374 55 3121952"
+                    android:textSize="18dp"
+            />
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/salaryIcon"
+                    app:layout_constraintStart_toStartOf="@id/guideLine_start"
+                    app:layout_constraintTop_toBottomOf="@id/phoneIcon"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_attach_money"
+            />
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/salary"
+                    app:layout_constraintStart_toEndOf="@id/personIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/phoneIcon"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="10dp"
+                    android:text="3000 $"
+                    android:textSize="18dp"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
